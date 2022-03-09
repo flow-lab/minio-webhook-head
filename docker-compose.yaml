@@ -21,7 +21,7 @@ services:
       - ./policy.json:/tmp/policy.json:ro
 
   minio:
-    image: minio/minio:RELEASE.2022-01-08T03-11-54Z
+    image: minio/minio
     command: server /data --console-address ":9001"
     expose:
       - "9000"
